@@ -58,6 +58,11 @@
                 "bundleName": "custom-theme"
               },
               {
+                "input": "src/themes/cdl/styles/theme.scss",
+                "inject": false,
+                "bundleName": "cdl-theme"
+              },
+              {
                 "input": "src/themes/dspace/styles/theme.scss",
                 "inject": false,
                 "bundleName": "dspace-theme"

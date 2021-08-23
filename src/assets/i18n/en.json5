@@ -1668,7 +1668,7 @@
 
   "home.title": "Home",
 
-  "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in eScholarship DSpace",
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
@@ -3232,7 +3232,7 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title.prefix": "DSpace Angular :: ",
+  "repository.title.prefix": "eScholarship DSpace Pilot :: ",
 
   "repository.title.prefixDSpace": "DSpace Angular ::",
 
@@ -4377,7 +4377,7 @@
 
 
 
-  "title": "DSpace",
+  "title": "eScholarship DSpace",
 
 
 
