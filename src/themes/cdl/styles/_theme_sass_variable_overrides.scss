@@ -1,0 +1,34 @@
+// DSpace works with CSS variables for its own components, and has a mapping of all bootstrap Sass
+// variables to CSS equivalents (see src/styles/_bootstrap_variables_mapping.scss). However Bootstrap
+// still uses Sass variables internally. So if you want to override bootstrap (or other sass
+// variables) you can do so here. Their CSS counterparts will include the changes you make here
+
+// Import the SourceSansPro font via a custom SCSS file
+@import '../assets/fonts/SourceSansPro';
+
+$font-family-sans-serif: "SourceSansPro", -apple-system, BlinkMacSystemFont, Arial, "Helvetica", sans-serif !default;
+
+$gray-700: #495057 !default;  // Bootstrap $gray-700
+$gray-100: #f8f9fa !default;  //           $gray-100
+
+$escholarship-gray: #515151;
+
+$blue:   #2B4E72 !default;
+$green:  #94BA65 !default;
+$cyan:   #006666 !default;
+$yellow: #ec9433 !default;
+$red:    #CF4444 !default;
+$dark:   darken($blue, 17%) !default;
+
+$theme-colors: (
+  primary: $escholarship-gray,
+  secondary: $gray-700,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $dark
+) !default;
+//
+// $link-color: map-get($theme-colors, info) !default;
