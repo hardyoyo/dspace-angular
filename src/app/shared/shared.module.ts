@@ -237,10 +237,36 @@ import { OnClickMenuItemComponent } from './menu/menu-item/onclick-menu-item.com
 import { TextMenuItemComponent } from './menu/menu-item/text-menu-item.component';
 import { ThemedConfigurationSearchPageComponent } from '../search-page/themed-configuration-search-page.component';
 import { SearchNavbarComponent } from '../search-navbar/search-navbar.component';
+<<<<<<< HEAD
 import { ItemVersionsSummaryModalComponent } from './item/item-versions/item-versions-summary-modal/item-versions-summary-modal.component';
 import { ItemVersionsDeleteModalComponent } from './item/item-versions/item-versions-delete-modal/item-versions-delete-modal.component';
 import { ScopeSelectorModalComponent } from './search-form/scope-selector-modal/scope-selector-modal.component';
 import { BitstreamRequestACopyPageComponent } from './bitstream-request-a-copy-page/bitstream-request-a-copy-page.component';
+=======
+import { LogInOrcidComponent } from './log-in/methods/orcid/log-in-orcid.component';
+import { DsDynamicRelationGroupModalComponent } from './form/builder/ds-dynamic-form-ui/models/relation-group/modal/dynamic-relation-group-modal.components';
+import { ClaimItemSelectorComponent } from './dso-selector/modal-wrappers/claim-item-selector/claim-item-selector.component';
+import { MetricBadgesComponent } from './object-list/metric-badges/metric-badges.component';
+import { MetricLoaderComponent } from './metric/metric-loader/metric-loader.component';
+import { MetricAltmetricComponent } from './metric/metric-altmetric/metric-altmetric.component';
+import { MetricDimensionsComponent } from './metric/metric-dimensions/metric-dimensions.component';
+import { MetricDspacecrisComponent } from './metric/metric-dspacecris/metric-dspacecris.component';
+import { MetricGooglescholarComponent } from './metric/metric-googlescholar/metric-googlescholar.component';
+import { MetricEmbeddedViewComponent } from './metric/metric-embedded-view/metric-embedded-view.component';
+import { MetricEmbeddedDownloadComponent } from './metric/metric-embedded-download/metric-embedded-download.component';
+import { MetricDonutsComponent } from './object-list/metric-donuts/metric-donuts.component';
+import { BrowseMostElementsComponent } from './browse-most-elements/browse-most-elements.component';
+import { BrowseSectionComponent } from './explore/section-component/browse-section/browse-section.component';
+import { TopSectionComponent } from './explore/section-component/top-section/top-section.component';
+import { FacetSectionComponent } from './explore/section-component/facet-section/facet-section.component';
+import { SearchSectionComponent } from './explore/section-component/search-section/search-section.component';
+import { TextSectionComponent } from './explore/section-component/text-section/text-section.component';
+import { CountersSectionComponent } from './explore/section-component/counters-section/counters-section.component';
+import { MultiColumnTopSectionComponent } from './explore/section-component/multi-column-top-section/multi-column-top-section.component';
+import { EditMetadataSecurityComponent } from '../item-page/edit-item-page/edit-metadata-security/edit-metadata-security.component';
+import { MetadataLinkViewComponent } from './metadata-link-view/metadata-link-view.component';
+import { LogInOidcComponent } from './log-in/methods/oidc/log-in-oidc.component';
+>>>>>>> 034c31eeb... [DSC-196] Added components to log in with OIDC
 
 /**
  * Declaration needed to make sure all decorator functions are called in time
@@ -424,6 +450,8 @@ const COMPONENTS = [
   ExistingMetadataListElementComponent,
   ExistingRelationListElementComponent,
   LogInShibbolethComponent,
+  LogInOrcidComponent,
+  LogInOidcComponent,
   LogInPasswordComponent,
   LogInContainerComponent,
   ItemVersionsComponent,
@@ -516,6 +544,8 @@ const ENTRY_COMPONENTS = [
   SearchAuthorityFilterComponent,
   LogInPasswordComponent,
   LogInShibbolethComponent,
+  LogInOrcidComponent,
+  LogInOidcComponent,
   BundleListElementComponent,
   ClaimedTaskActionsApproveComponent,
   ClaimedTaskActionsRejectComponent,
