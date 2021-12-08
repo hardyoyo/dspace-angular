@@ -9,7 +9,7 @@ export const environment: GlobalConfig = {
   // NOTE: these must be "synced" with the 'dspace.ui.url' setting in your backend's local.cfg.
   ui: {
     ssl: false,
-    host: 'pub-ds-dev.escholarship.org',
+    host: 'localhost',
     port: 4000,
     // NOTE: Space is capitalized because 'namespace' is a reserved string in TypeScript
     nameSpace: '/',
