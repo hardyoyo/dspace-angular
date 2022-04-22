@@ -29,109 +29,34 @@ import { StoreModule } from '@ngrx/store';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { TranslateModule } from '@ngx-translate/core';
 import { HomeNewsComponent } from './app/home-page/home-news/home-news.component';
-import { HomePageComponent } from './app/home-page/home-page.component';
-import { HomePageModule } from '../../app/home-page/home-page.module';
-import { RootComponent } from './app/root/root.component';
 import { AppModule } from '../../app/app.module';
-import { PublicationComponent } from './app/item-page/simple/item-types/publication/publication.component';
 import { ItemPageModule } from '../../app/item-page/item-page.module';
 import { RouterModule } from '@angular/router';
-import { AccessControlModule } from '../../app/access-control/access-control.module';
-import { BrowseBySwitcherComponent } from './app/browse-by/browse-by-switcher/browse-by-switcher.component';
-import { CommunityListPageComponent } from './app/community-list-page/community-list-page.component';
 import { CommunityListPageModule } from '../../app/community-list-page/community-list-page.module';
-import { SearchPageComponent } from './app/search-page/search-page.component';
 import { InfoModule } from '../../app/info/info.module';
-import { EndUserAgreementComponent } from './app/info/end-user-agreement/end-user-agreement.component';
-import { PageNotFoundComponent } from './app/pagenotfound/pagenotfound.component';
-import { ObjectNotFoundComponent } from './app/lookup-by-id/objectnotfound/objectnotfound.component';
-import { ForbiddenComponent } from './app/forbidden/forbidden.component';
-import { PrivacyComponent } from './app/info/privacy/privacy.component';
-import { CollectionStatisticsPageComponent } from './app/statistics-page/collection-statistics-page/collection-statistics-page.component';
-import { CommunityStatisticsPageComponent } from './app/statistics-page/community-statistics-page/community-statistics-page.component';
 import { StatisticsPageModule } from '../../app/statistics-page/statistics-page.module';
-import { ItemStatisticsPageComponent } from './app/statistics-page/item-statistics-page/item-statistics-page.component';
-import { SiteStatisticsPageComponent } from './app/statistics-page/site-statistics-page/site-statistics-page.component';
-import { CommunityPageComponent } from './app/community-page/community-page.component';
-import { CollectionPageComponent } from './app/collection-page/collection-page.component';
 import { CommunityPageModule } from '../../app/community-page/community-page.module';
 import { CollectionPageModule } from '../../app/collection-page/collection-page.module';
-import { ConfigurationSearchPageComponent } from './app/search-page/configuration-search-page.component';
-import { ItemPageComponent } from './app/item-page/simple/item-page.component';
-import { FullItemPageComponent } from './app/item-page/full/full-item-page.component';
-import { LoginPageComponent } from './app/login-page/login-page.component';
-import { LogoutPageComponent } from './app/logout-page/logout-page.component';
-import { CreateProfileComponent } from './app/register-page/create-profile/create-profile.component';
-import { ForgotEmailComponent } from './app/forgot-password/forgot-password-email/forgot-email.component';
-import { ForgotPasswordFormComponent } from './app/forgot-password/forgot-password-form/forgot-password-form.component';
-import { ProfilePageComponent } from './app/profile-page/profile-page.component';
-import { RegisterEmailComponent } from './app/register-page/register-email/register-email.component';
-import { SubmissionEditComponent } from './app/submission/edit/submission-edit.component';
-import { SubmissionImportExternalComponent } from './app/submission/import-external/submission-import-external.component';
-import { SubmissionSubmitComponent } from './app/submission/submit/submission-submit.component';
-import { MyDSpacePageComponent } from './app/my-dspace-page/my-dspace-page.component';
-import { WorkflowItemSendBackComponent } from './app/workflowitems-edit-page/workflow-item-send-back/workflow-item-send-back.component';
-import { WorkflowItemDeleteComponent } from './app/workflowitems-edit-page/workflow-item-delete/workflow-item-delete.component';
 import { SubmissionModule } from '../../app/submission/submission.module';
 import { MyDSpacePageModule } from '../../app/my-dspace-page/my-dspace-page.module';
 import { NavbarComponent } from './app/navbar/navbar.component';
 import { HeaderComponent } from './app/header/header.component';
-import { FooterComponent } from './app/footer/footer.component';
-import { BreadcrumbsComponent } from './app/breadcrumbs/breadcrumbs.component';
 import { HeaderNavbarWrapperComponent } from './app/header-nav-wrapper/header-navbar-wrapper.component';
-import { FileSectionComponent } from './app/item-page/simple/field-components/file-section/file-section.component';
+import { FooterComponent } from './app/footer/footer.component';
 import { SearchModule } from '../../app/shared/search/search.module';
 import { ResourcePoliciesModule } from '../../app/shared/resource-policies/resource-policies.module';
 import { ComcolModule } from '../../app/shared/comcol/comcol.module';
-import { FeedbackComponent } from './app/info/feedback/feedback.component';
 
 const DECLARATIONS = [
-  FileSectionComponent,
-  HomePageComponent,
   HomeNewsComponent,
-  RootComponent,
-  PublicationComponent,
-  BrowseBySwitcherComponent,
-  CommunityListPageComponent,
-  SearchPageComponent,
-  ConfigurationSearchPageComponent,
-  EndUserAgreementComponent,
-  PageNotFoundComponent,
-  ObjectNotFoundComponent,
-  ForbiddenComponent,
-  PrivacyComponent,
-  CollectionStatisticsPageComponent,
-  CommunityStatisticsPageComponent,
-  ItemStatisticsPageComponent,
-  SiteStatisticsPageComponent,
-  CommunityPageComponent,
-  CollectionPageComponent,
-  ItemPageComponent,
-  FullItemPageComponent,
-  LoginPageComponent,
-  LogoutPageComponent,
-  CreateProfileComponent,
-  ForgotEmailComponent,
-  ForgotPasswordFormComponent,
-  ProfilePageComponent,
-  RegisterEmailComponent,
-  MyDSpacePageComponent,
-  SubmissionEditComponent,
-  SubmissionImportExternalComponent,
-  SubmissionSubmitComponent,
-  WorkflowItemDeleteComponent,
-  WorkflowItemSendBackComponent,
   FooterComponent,
   HeaderComponent,
-  NavbarComponent,
   HeaderNavbarWrapperComponent,
-  BreadcrumbsComponent,
-  FeedbackComponent
+  NavbarComponent
 ];
 
 @NgModule({
   imports: [
-    AccessControlModule,
     AdminRegistriesModule,
     AdminSearchModule,
     AdminWorkflowModuleModule,
@@ -149,7 +74,6 @@ const DECLARATIONS = [
     ItemPageModule,
     EditItemPageModule,
     FormsModule,
-    HomePageModule,
     HttpClientModule,
     IdlePreloadModule,
     InfoModule,

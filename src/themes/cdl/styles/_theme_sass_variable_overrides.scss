@@ -30,5 +30,5 @@ $theme-colors: (
   light: $gray-100,
   dark: $dark
 ) !default;
-//
-// $link-color: map-get($theme-colors, info) !default;
+
+$yiq-contrasted-threshold:  170 !default;
