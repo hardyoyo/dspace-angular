@@ -12,7 +12,7 @@ import { EagerThemeModule as DSpaceEagerThemeModule } from './dspace/eager-theme
 @NgModule({
   imports: [
     DSpaceEagerThemeModule,
-    // CustomEagerThemeModule,
+    CDLEagerThemeModule,
   ],
 })
 export class EagerThemesModule {
