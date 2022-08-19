@@ -19,6 +19,7 @@ $cyan:   #006666 !default;
 $yellow: #ec9433 !default;
 $red:    #CF4444 !default;
 $dark:   darken($blue, 17%) !default;
+$ds-banner-text-background: $escholarship-gray;
 
 $theme-colors: (
   primary: $escholarship-gray,
@@ -30,5 +31,5 @@ $theme-colors: (
   light: $gray-100,
   dark: $dark
 ) !default;
-//
-// $link-color: map-get($theme-colors, info) !default;
+
+$yiq-contrasted-threshold:  170 !default;

@@ -56,15 +56,20 @@
   <div class="bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
     <div class="content-container">
       <p class="m-0">
-        <img src="assets/images/logo_footer-eschol.svg" />
+        <a class="escholarship-footer"
+              href="https://escholarship.org/">{{ 'footer.link.eScholarship' | translate}}</a> | 
+        {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }}
+        <a class="text-white"
+           href="https://regents.universityofcalifornia.edu/">{{ 'footer.link.regents' | translate}}</a>
       </p>
+
       <p class="m-0">
-        Powered by the California Digital Library<br/>
-        Copyright &copy; 2021 The Regents of the University of California
-      </p>
+        <a class="text-white"
+           href="https://cdlib.org/">{{ 'footer.link.poweredbycdl' | translate}}</a>
+       </p>
       <ul class="footer-info list-unstyled small d-flex justify-content-center mb-0">
         <li>
-          <a class="text-white" href="#"
+          <a class="text-white" href="javascript:void(0);"
              (click)="showCookieSettings()">{{ 'footer.link.cookies' | translate}}</a>
         </li>
         <li>
@@ -74,6 +79,10 @@
         <li>
           <a class="text-white"
              routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' | translate}}</a>
+        </li>
+        <li>
+          <a class="text-white"
+             routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>
         </li>
       </ul>
     </div>

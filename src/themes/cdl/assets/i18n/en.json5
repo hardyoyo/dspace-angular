@@ -1,0 +1,19 @@
+{
+  // DSpace default: "All of DSpace"
+  "menu.section.browse_global": "Browse DSpace",
+
+  // DSpace default: "DSpace Angular :: "
+  "repository.title.prefix": "eScholarship DSpace Pilot :: ",
+  "repository.title.prefixDSpace": "eScholarship DSpace Pilot ::",
+
+  // DSpace default: "DSpace"
+  "title": "eScholarship DSpace",
+
+  "footer.link.eScholarship": "eScholarship DSpace Pilot",
+  "footer.link.copyright": "software copyright",
+  "footer.link.regents": "The Regents of the University of California",
+  "footer.link.poweredbycdl": "Powered by the Californial Digital Library",
+
+  "menu.header.image.logo": "eScholarship DSpace",
+
+}

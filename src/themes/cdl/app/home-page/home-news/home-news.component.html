@@ -1,13 +1,17 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="background-image-container">
   <div class="container">
     <div class="jumbotron jumbotron-fluid">
       <div class="d-flex flex-wrap">
         <div>
           <h1 class="display-3">eScholarship&rsquo;s DSpace 7 Pilot</h1>
-          <p class="lead">This is an experimental installation of DSpace 7, hosted by the California Digital Library. No guarantees of 
-            permanence are implied or guaranteed. Any data loaded to this platform can be changed or removed without warning.</p>
+          <p class="lead">This is an experimental installation of DSpace 7, hosted by the California Digital Library. No guarantees of permanence are implied. Any data loaded to this platform can be changed or removed without warning.</p>
         </div>
       </div>
     </div>
   </div>
+  <picture class="background-image">
+    <source type="image/webp" srcset="assets/cdl/images/banner.webp 2000w, assets/dspace/images/banner-half.webp 1200w, assets/dspace/images/banner-tall.webp 768w">
+    <source type="image/jpg" srcset="assets/cdl/images/banner.jpg 2000w, assets/dspace/images/banner-half.jpg 1200w, assets/dspace/images/banner-tall.jpg 768w">
+    <img alt="" [src]="'assets/cdl/images/banner.jpg'"/><!-- without the []="''" Firefox downloads both the fallback and the resolved image -->
+  </picture>
 </div>
