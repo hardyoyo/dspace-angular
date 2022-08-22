@@ -196,7 +196,6 @@ export class AuthInterceptor implements HttpInterceptor {
       authStatus.authenticated = true;
       authStatus.token = new AuthTokenInfo(accessToken);
     } else {
-      // console.log(`QQQ an error! ${error}`)
       authStatus.authenticated = false;
       authStatus.error = isNotEmpty(error) ? ((typeof error === 'string') ? JSON.parse(error) : error) : null;
     }
@@ -278,8 +277,7 @@ export class AuthInterceptor implements HttpInterceptor {
             this.refreshTokenRequestUrls = [];
 
             // Create a new HttpResponse and return it, so it can be handle properly by AuthService.
-            
-            // console.log(`QQQ: possible error.url= ${error.url}`)
+
             const authResponse = new HttpResponse({
               body: this.makeAuthStatusObject(false, null, error.error, error.headers),
               headers: error.headers,
