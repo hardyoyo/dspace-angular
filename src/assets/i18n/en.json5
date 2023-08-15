@@ -2816,7 +2816,7 @@
 
   "menu.header.admin": "Management",
 
-  "menu.header.image.logo": "Repository logo",
+  "menu.header.image.logo": "eScholarship DSpace",
 
   "menu.header.admin.description": "Management menu",
 
@@ -2840,7 +2840,7 @@
 
   "menu.section.browse_community_by_title": "By Title",
 
-  "menu.section.browse_global": "All of DSpace",
+  "menu.section.browse_global": "Browse DSpace",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -3530,7 +3530,7 @@
 
   "repository.title": "DSpace Repository",
 
-  "repository.title.prefix": "DSpace Repository :: ",
+  "repository.title.prefix": "eScholarship DSpace Pilot :: ",
 
   "resource-policies.add.button": "Add",
 
@@ -4788,7 +4788,7 @@
 
   "thumbnail.person.placeholder": "No Profile Picture Available",
 
-  "title": "DSpace",
+  title: "eScholarship DSpace",
 
   "vocabulary-treeview.header": "Hierarchical tree view",
 
@@ -5296,4 +5296,13 @@
 
   "vocabulary-treeview.search.form.add": "Add",
 
+  "repository.title.prefixDSpace": "eScholarship DSpace Pilot ::",
+
+  "footer.link.eScholarship": "eScholarship DSpace Pilot",
+
+  "footer.link.copyright": "software copyright",
+
+  "footer.link.regents": "The Regents of the University of California",
+
+  "footer.link.poweredbycdl": "Powered by the Californial Digital Library",
 }
