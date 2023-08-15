@@ -5,8 +5,8 @@ import { HomePageComponent as BaseComponent } from '../../../../app/home-page/ho
   selector: 'ds-home-page',
   // styleUrls: ['./home-page.component.scss'],
   styleUrls: ['../../../../app/home-page/home-page.component.scss'],
-  // templateUrl: './home-page.component.html'
-  templateUrl: '../../../../app/home-page/home-page.component.html'
+  templateUrl: './home-page.component.html'
+  // templateUrl: '../../../../app/home-page/home-page.component.html'
 })
 export class HomePageComponent extends BaseComponent {
 
