@@ -51,21 +51,21 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # If CHROME_VERSION env variable specified above, then pin to that version.
-      # Otherwise, just install latest version of Chrome.
-      - name: Install Chrome (for e2e tests)
-        run: |
-          if [[ -z "${CHROME_VERSION}" ]]
-          then
-             echo "Installing latest stable version"
-             sudo apt-get update
-             sudo apt-get --only-upgrade install google-chrome-stable -y
-          else
-             echo "Installing version ${CHROME_VERSION}"
-             wget -q "https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_amd64.deb"
-             sudo dpkg -i "google-chrome-stable_${CHROME_VERSION}_amd64.deb"
-          fi
-          google-chrome --version
+      # # If CHROME_VERSION env variable specified above, then pin to that version.
+      # # Otherwise, just install latest version of Chrome.
+      # - name: Install Chrome (for e2e tests)
+      #   run: |
+      #     if [[ -z "${CHROME_VERSION}" ]]
+      #     then
+      #        echo "Installing latest stable version"
+      #        sudo apt-get update
+      #        sudo apt-get --only-upgrade install google-chrome-stable -y
+      #     else
+      #        echo "Installing version ${CHROME_VERSION}"
+      #        wget -q "https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_amd64.deb"
+      #        sudo dpkg -i "google-chrome-stable_${CHROME_VERSION}_amd64.deb"
+      #     fi
+      #     google-chrome --version
 
       # https://github.com/actions/cache/blob/main/examples.md#node---yarn
       - name: Get Yarn cache directory
@@ -120,8 +120,8 @@ jobs:
       - name: Run e2e tests (integration tests)
         uses: cypress-io/github-action@v6
         with:
-          # Run tests in Chrome, headless mode (default)
-          browser: chrome
+          # Run tests in Electron
+          browser: electron
           # Start app before running tests (will be stopped automatically after tests finish)
           start: yarn run serve:ssr
           # Wait for backend & frontend to be available
