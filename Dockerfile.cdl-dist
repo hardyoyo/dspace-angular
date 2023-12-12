@@ -1,0 +1,25 @@
+# Pull the existing image from Docker Hub
+FROM dspace/dspace-angular:dspace-7_x-dist
+
+# Switch to the node user for the following commands
+USER node
+
+# Assuming yarn build:prod has already been executed, validate dist folder
+WORKDIR /app/
+
+# Check if the necessary files exist in the dist folder
+RUN test -d dist/server || { echo "Error: 'server' directory not found in 'dist' folder. Aborting."; exit 1; }
+RUN test -d dist/browser || { echo "Error: 'browser' directory not found in 'dist' folder. Aborting."; exit 1; }
+
+# Continue with copying necessary files
+COPY --chown=node:node dist /app/dist/
+COPY --chown=node:node config /app/config/
+COPY --chown=node:node docker/dspace-ui.json /app/dspace-ui.json
+
+# Set environment variables and expose the necessary port
+ENV NODE_ENV production
+EXPOSE 4000
+
+# Start the application using pm2-runtime
+CMD pm2-runtime start dspace-ui.json
+
